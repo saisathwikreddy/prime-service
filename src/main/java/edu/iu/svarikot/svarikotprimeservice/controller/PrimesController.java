@@ -12,8 +12,8 @@ public class PrimesController {
     public PrimesController(IPrimesService primesService){
         this.primesService = primesService;
     }
-    @GetMapping("/primes/{n}")
-    public boolean isPrime(@PathVariable("n") int n){
+    @GetMapping("/{n}")
+    public boolean isPrime(@PathVariable("n") int n) {
         return primesService.isPrime(n);
     }
 }

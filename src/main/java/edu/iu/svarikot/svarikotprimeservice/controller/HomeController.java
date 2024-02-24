@@ -8,7 +8,7 @@ import org.springframework.web.bind.annotation.RestController;
 @CrossOrigin
 public class HomeController {
     @GetMapping
-    public String greeting(){
+    public String greeting() {
         return "Welcome to primes service!";
     }
 }
