@@ -1,8 +1,4 @@
 name: Docker Image CI for GHCR
-
-#server:
-#  port: 8080
-
 on:
   push
 
@@ -19,6 +15,9 @@ jobs:
           java-version: '17'
           distribution: 'adopt'
 
+      - name: Build the package
+        run: mvn --batch-mode -DskipTests package
+
       - name: Run the unit tests
         run: mvn --batch-mode -Dmaven.test.failure.ignore=true test
 
@@ -34,5 +33,5 @@ jobs:
       - name: Build and push the image
         run: |
           docker login --username saisathwikreddy --password ${{secrets.ACCESS_TOKEN}} ghcr.io
-          docker build -t ghcr.io/saisathwikreddy/prime-service:latest --file Dockerfile .
-          docker push ghcr.io/saisathwikreddy/prime-service:latest
+          docker build -t ghcr.io/saisathwikreddy/primes-service:latest --file Dockerfile .  
+          docker push ghcr.io/saisathwikreddy/primes-service:latest
