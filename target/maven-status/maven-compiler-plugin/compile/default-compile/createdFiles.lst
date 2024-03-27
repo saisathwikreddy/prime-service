@@ -1,3 +1,13 @@
 edu/iu/svarikot/svarikotprimeservice/controller/PrimesController.class
-edu/iu/svarikot/svarikotprimeservice/controller/HomeController.class
+edu/iu/svarikot/svarikotprimeservice/controller/AuthenticationController.class
 edu/iu/svarikot/svarikotprimeservice/SvarikotPrimeServiceApplication.class
+edu/iu/svarikot/svarikotprimeservice/security/KeyGeneratorUtils.class
+edu/iu/svarikot/svarikotprimeservice/service/AuthenticationService.class
+edu/iu/svarikot/svarikotprimeservice/service/IAuthenticationService.class
+edu/iu/svarikot/svarikotprimeservice/service/TokenService.class
+edu/iu/svarikot/svarikotprimeservice/model/Customer.class
+edu/iu/svarikot/svarikotprimeservice/controller/HomeController.class
+edu/iu/svarikot/svarikotprimeservice/security/SecurityConfig.class
+edu/iu/svarikot/svarikotprimeservice/repository/AuthenticationFileRepository.class
+edu/iu/svarikot/svarikotprimeservice/repository/IAuthenticationRepository.class
+edu/iu/svarikot/svarikotprimeservice/security/Jwks.class
