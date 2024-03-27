@@ -3,7 +3,7 @@ package edu.iu.svarikot.svarikotprimeservice.controller;
 
 import edu.iu.svarikot.svarikotprimeservice.service.IPrimesService;
 import org.springframework.web.bind.annotation.*;
-// dummy
+
 @RestController
 @CrossOrigin
 @RequestMapping("/primes")
