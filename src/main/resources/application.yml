@@ -13,5 +13,8 @@ spring:
     init:
       mode:always
 
-  server:
-    port: 8085
+  rabbitmq:
+    host: localhost
+    port: 4006
+    username: guest
+    password: guest
